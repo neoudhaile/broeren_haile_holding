@@ -1,4 +1,39 @@
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+function ImageWithFallback({
+  src,
+  alt,
+  className,
+  fallbackText = "Photo"
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  fallbackText?: string;
+}) {
+  const [error, setError] = useState(false);
+
+  if (error) {
+    return (
+      <div className={`flex items-center justify-center bg-gray-200 text-gray-400 text-sm ${className}`}>
+        {fallbackText}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onError={() => setError(true)}
+    />
+  );
+}
 
 export default function Home() {
   return (
@@ -11,10 +46,10 @@ export default function Home() {
               Broeren & Co. Holdings
             </h1>
             <p className="text-xl text-charcoal mb-4 leading-relaxed">
-              A long-term holding company based in Los Angeles that acquires and operates established small businesses.
+              A holding company based in Los Angeles that acquires and operates established businesses long-term.
             </p>
             <p className="text-lg text-soft-gray mb-10">
-              We partner with owners seeking succession and continuity for their employees and customers.
+              We partner with owners seeking succession or looking to grow their business while maintaining continuity for their employees and customers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/for-business-owners" className="btn-primary inline-block text-center">
@@ -72,17 +107,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industries */}
+      {/* Industries with Images */}
       <section className="py-20 bg-warm-white">
         <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl text-navy mb-6">Industries We Focus On</h2>
-            <h3 className="text-xl text-charcoal mb-8">Repair & Maintenance Businesses</h3>
-            <div className="grid grid-cols-2 gap-4 text-soft-gray">
-              <div className="bg-white p-4 rounded">Automotive Repair</div>
-              <div className="bg-white p-4 rounded">Equipment Repair</div>
-              <div className="bg-white p-4 rounded">Specialized Technical Services</div>
-              <div className="bg-white p-4 rounded">Local Service Companies</div>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl text-navy text-center mb-4">Industries We Focus On</h2>
+            <p className="text-soft-gray text-center mb-12">Repair & Maintenance Businesses</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="group">
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-3">
+                  <ImageWithFallback
+                    src="/images/auto-repair.jpg"
+                    alt="Automotive Repair"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fallbackText="Auto"
+                  />
+                </div>
+                <p className="text-charcoal text-center text-sm font-medium">Automotive Repair</p>
+              </div>
+              <div className="group">
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-3">
+                  <ImageWithFallback
+                    src="/images/equipment-repair.jpg"
+                    alt="Equipment Repair"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fallbackText="Equipment"
+                  />
+                </div>
+                <p className="text-charcoal text-center text-sm font-medium">Equipment Repair</p>
+              </div>
+              <div className="group">
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-3">
+                  <ImageWithFallback
+                    src="/images/technical-services.jpg"
+                    alt="Specialized Technical Services"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fallbackText="Technical"
+                  />
+                </div>
+                <p className="text-charcoal text-center text-sm font-medium">Technical Services</p>
+              </div>
+              <div className="group">
+                <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden mb-3">
+                  <ImageWithFallback
+                    src="/images/local-service.jpg"
+                    alt="Local Service Companies"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fallbackText="Service"
+                  />
+                </div>
+                <p className="text-charcoal text-center text-sm font-medium">Local Services</p>
+              </div>
             </div>
           </div>
         </div>
@@ -93,8 +168,13 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-12">
-              <div className="w-48 h-48 bg-gray-200 rounded-full flex-shrink-0 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">Photo</span>
+              <div className="w-48 h-48 bg-gray-100 rounded-full flex-shrink-0 overflow-hidden">
+                <ImageWithFallback
+                  src="/images/founder.jpg"
+                  alt="Rigel Broeren"
+                  className="w-full h-full object-cover"
+                  fallbackText="Photo"
+                />
               </div>
               <div>
                 <h2 className="text-3xl text-navy mb-4">Meet the Founder</h2>

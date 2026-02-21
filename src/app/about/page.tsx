@@ -1,10 +1,38 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Our Approach | Broeren & Co. Holdings",
-  description: "Learn about our philosophy on permanent business ownership and how we approach acquisitions differently.",
-};
+import Link from "next/link";
+import { useState } from "react";
+
+function ImageWithFallback({
+  src,
+  alt,
+  className,
+  fallbackText = "Photo"
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+  fallbackText?: string;
+}) {
+  const [error, setError] = useState(false);
+
+  if (error) {
+    return (
+      <div className={`flex items-center justify-center bg-gray-200 text-gray-400 text-sm ${className}`}>
+        {fallbackText}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      onError={() => setError(true)}
+    />
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -22,8 +50,51 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Philosophy */}
+      {/* About Rigel */}
       <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-start gap-12">
+              <div className="w-64 h-80 bg-gray-100 rounded-lg flex-shrink-0 overflow-hidden">
+                <ImageWithFallback
+                  src="/images/rigel.jpg"
+                  alt="Rigel Broeren"
+                  className="w-full h-full object-cover"
+                  fallbackText="Photo"
+                />
+              </div>
+              <div>
+                <h2 className="text-3xl text-navy mb-6">About Rigel Broeren</h2>
+                <div className="prose prose-lg text-soft-gray">
+                  <p className="leading-relaxed mb-4">
+                    I&apos;m a Los Angeles native with deep roots in Southern California. After graduating from
+                    the <span className="text-navy font-medium">USC Marshall School of Business</span>, I spent
+                    years in real estate, learning how to evaluate assets, structure deals, and manage
+                    long-term investments.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    That experience taught me a fundamental truth: the best investments are the ones you
+                    hold onto. I founded Broeren & Co. Holdings to apply that same patient, long-term
+                    approach to small business ownership.
+                  </p>
+                  <p className="leading-relaxed mb-4">
+                    I focus exclusively on <span className="text-navy font-medium">Southern California businesses</span> because
+                    I believe in being close to the companies I own. I want to know the employees, understand
+                    the customers, and be available when I&apos;m needed.
+                  </p>
+                  <p className="leading-relaxed">
+                    My goal is simple: to build a portfolio of great businesses that I&apos;ll own and
+                    operate for decades&mdash;not flip in a few years for a quick profit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Philosophy */}
+      <section className="py-20 bg-warm-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl text-navy mb-8">Our Philosophy</h2>
@@ -47,7 +118,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why We Buy Businesses */}
-      <section className="py-20 bg-warm-white">
+      <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl text-navy mb-8">Why We Buy Businesses</h2>
@@ -72,7 +143,7 @@ export default function AboutPage() {
       </section>
 
       {/* How We Transition Ownership */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-warm-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl text-navy mb-8">How We Transition Ownership</h2>

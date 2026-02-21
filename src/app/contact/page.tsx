@@ -90,11 +90,32 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="mt-12 p-6 bg-warm-white rounded-lg">
-                  <p className="text-soft-gray text-sm leading-relaxed italic">
-                    &ldquo;All conversations are confidential and non-obligatory. We&apos;re here to listen
-                    and answer any questions you may have, with no pressure or commitments.&rdquo;
+                <div className="mt-12 p-6 bg-warm-white rounded-lg border-l-4 border-gold">
+                  <h3 className="text-navy font-semibold mb-3">Our Confidentiality Promise</h3>
+                  <p className="text-soft-gray text-sm leading-relaxed mb-3">
+                    We understand that considering a sale is a deeply personal decision. Every conversation
+                    we have is held in the strictest confidence.
                   </p>
+                  <ul className="text-soft-gray text-sm space-y-2">
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Your inquiry will never be shared with anyone</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>No obligation to proceed at any stage</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Your employees and customers will not know about our discussions</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
