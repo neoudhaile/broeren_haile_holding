@@ -56,8 +56,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-navy font-medium mb-1">Phone</h3>
-                      <a href="tel:+13105551234" className="text-soft-gray hover:text-navy transition-colors">
-                        (310) 555-1234
+                      <a href="tel:+12132615670" className="text-soft-gray hover:text-navy transition-colors">
+                        (213) 261-5670
                       </a>
                     </div>
                   </div>
@@ -70,8 +70,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-navy font-medium mb-1">Email</h3>
-                      <a href="mailto:info@broerenco.com" className="text-soft-gray hover:text-navy transition-colors">
-                        info@broerenco.com
+                      <a href="mailto:rigel@broerenandco.com" className="text-soft-gray hover:text-navy transition-colors">
+                        rigel@broerenandco.com
                       </a>
                     </div>
                   </div>

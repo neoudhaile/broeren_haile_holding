@@ -18,8 +18,12 @@ export default function Navigation() {
     <nav className="bg-warm-white border-b border-gray-200">
       <div className="container-custom">
         <div className="flex justify-between items-center py-5">
-          <Link href="/" className="text-xl font-semibold text-navy tracking-tight">
-            Broeren & Co.
+          <Link href="/" className="block">
+            <img
+              src="/images/logo.jpg"
+              alt="Broeren & Co."
+              className="h-8 md:h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

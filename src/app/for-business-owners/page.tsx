@@ -29,7 +29,7 @@ export default function ForBusinessOwnersPage() {
             <div className="bg-warm-white p-8 md:p-12 rounded-lg border border-gray-200">
               <div className="prose prose-lg text-charcoal">
                 <p className="leading-relaxed mb-6">
-                  If you&apos;re reading this, you&apos;ve probably spent years&mdash;maybe decades&mdash;building
+                  If you&apos;re reading this, you&apos;ve probably spent years, maybe decades, building
                   something real. A business that serves customers, employs people, and has a reputation
                   worth protecting.
                 </p>
@@ -43,7 +43,7 @@ export default function ForBusinessOwnersPage() {
                   live on.
                 </p>
                 <p className="leading-relaxed mb-6">
-                  We buy businesses to keep them&mdash;permanently. We are not flipping companies or rolling
+                  We buy businesses to keep them permanently. We are not flipping companies or rolling
                   them into something unrecognizable. We are building a family of businesses that we will
                   own and operate for the long haul.
                 </p>
@@ -52,8 +52,8 @@ export default function ForBusinessOwnersPage() {
                   There&apos;s no pressure, no timeline, and everything is confidential.
                 </p>
                 <p className="leading-relaxed mb-6">
-                  And if you decide to stay involved after a sale&mdash;as an advisor, a part-time
-                  consultant, or in any other capacity&mdash;we welcome that.
+                  And if you decide to stay involved after a sale, whether as an advisor, a part-time
+                  consultant, or in any other capacity, we welcome that.
                 </p>
                 <p className="leading-relaxed text-navy font-medium">
                   Your life&apos;s work deserves a thoughtful transition. I&apos;d be honored to discuss
@@ -83,7 +83,7 @@ export default function ForBusinessOwnersPage() {
                 <div>
                   <h3 className="text-xl text-navy mb-2">Intro Conversation</h3>
                   <p className="text-soft-gray leading-relaxed">
-                    We start with a simple phone call or meeting. No paperwork, no commitment&mdash;just
+                    We start with a simple phone call or meeting. No paperwork, no commitment. Just
                     a chance to get to know each other and see if there might be a fit.
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function ForBusinessOwnersPage() {
                   <h3 className="text-xl text-navy mb-2">Learn About Your Goals</h3>
                   <p className="text-soft-gray leading-relaxed">
                     Everyone&apos;s situation is different. We take time to understand what matters most
-                    to you&mdash;whether it&apos;s valuation, timing, employee retention, or staying involved.
+                    to you, whether it&apos;s valuation, timing, employee retention, or staying involved.
                   </p>
                 </div>
               </div>

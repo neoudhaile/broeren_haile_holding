@@ -6,7 +6,11 @@ export default function Footer() {
       <div className="container-custom">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Broeren & Co. Holdings</h3>
+            <img
+              src="/images/logo.jpg"
+              alt="Broeren & Co."
+              className="h-8 mb-4 brightness-0 invert"
+            />
             <p className="text-gray-300 text-sm leading-relaxed">
               A long-term holding company based in Los Angeles,
               dedicated to acquiring and operating established small businesses.
@@ -53,13 +57,13 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li>Los Angeles, California</li>
               <li>
-                <a href="mailto:info@broerenco.com" className="hover:text-white transition-colors">
-                  info@broerenco.com
+                <a href="mailto:rigel@broerenandco.com" className="hover:text-white transition-colors">
+                  rigel@broerenandco.com
                 </a>
               </li>
               <li>
-                <a href="tel:+13105551234" className="hover:text-white transition-colors">
-                  (310) 555-1234
+                <a href="tel:+12132615670" className="hover:text-white transition-colors">
+                  (213) 261-5670
                 </a>
               </li>
             </ul>
