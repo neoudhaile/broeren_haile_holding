@@ -20,7 +20,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-5">
           <Link href="/" className="block">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Broeren & Co."
               className="h-8 md:h-10 w-auto"
             />

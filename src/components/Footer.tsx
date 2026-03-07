@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           <div>
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Broeren & Co."
               className="h-8 mb-4 brightness-0 invert"
             />

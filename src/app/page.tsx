@@ -42,7 +42,7 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Broeren & Co."
               className="h-12 md:h-16 mx-auto mb-8"
             />
