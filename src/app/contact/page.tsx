@@ -151,21 +151,6 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="businessName" className="block text-navy font-medium mb-2">
-                        Business Name
-                      </label>
-                      <input
-                        type="text"
-                        id="businessName"
-                        name="businessName"
-                        value={formData.businessName}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors"
-                        placeholder="Smith Auto Repair"
-                      />
-                    </div>
-
-                    <div>
                       <label htmlFor="email" className="block text-navy font-medium mb-2">
                         Email Address
                       </label>
@@ -178,6 +163,21 @@ export default function ContactPage() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors"
                         placeholder="john@example.com"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="businessName" className="block text-navy font-medium mb-2">
+                        Business Name
+                      </label>
+                      <input
+                        type="text"
+                        id="businessName"
+                        name="businessName"
+                        value={formData.businessName}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors"
+                        placeholder="Smith Auto Repair"
                       />
                     </div>
 
