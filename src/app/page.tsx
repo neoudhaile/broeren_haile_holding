@@ -179,7 +179,7 @@ export default function Home() {
                 <ImageWithFallback
                   src="/images/founder.jpg"
                   alt="Rigel Broeren"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-125"
                   fallbackText="Photo"
                 />
               </div>
