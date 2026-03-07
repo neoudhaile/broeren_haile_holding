@@ -10,12 +10,29 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to an API
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setSubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xgonvozp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -199,9 +216,10 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full btn-primary py-4 text-center"
+                      disabled={submitting}
+                      className="w-full btn-primary py-4 text-center disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      Send Message
+                      {submitting ? "Sending..." : "Send Message"}
                     </button>
 
                     <p className="text-soft-gray text-sm text-center">
