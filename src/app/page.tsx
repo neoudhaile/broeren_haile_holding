@@ -44,7 +44,7 @@ export default function Home() {
             <img
               src="/images/logo.png"
               alt="Broeren & Co."
-              className="h-12 md:h-16 mx-auto mb-8"
+              className="h-16 md:h-24 mx-auto mb-8"
             />
             <div className="w-16 h-px bg-gold mx-auto mb-8"></div>
             <p className="text-xl md:text-2xl text-charcoal mb-4 leading-relaxed font-light">
