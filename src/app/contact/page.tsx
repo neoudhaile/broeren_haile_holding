@@ -6,7 +6,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     businessName: "",
-    city: "",
+    email: "",
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
@@ -166,17 +166,18 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label htmlFor="city" className="block text-navy font-medium mb-2">
-                        City
+                      <label htmlFor="email" className="block text-navy font-medium mb-2">
+                        Email Address
                       </label>
                       <input
-                        type="text"
-                        id="city"
-                        name="city"
-                        value={formData.city}
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        value={formData.email}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold/50 focus:border-gold outline-none transition-colors"
-                        placeholder="Los Angeles, CA"
+                        placeholder="john@example.com"
                       />
                     </div>
 
