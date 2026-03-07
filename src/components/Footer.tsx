@@ -9,7 +9,7 @@ export default function Footer() {
             <img
               src="/images/logo.png"
               alt="Broeren & Co."
-              className="h-6 mb-4 brightness-0 invert"
+              className="h-16 mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
               A long-term holding company based in Los Angeles,
