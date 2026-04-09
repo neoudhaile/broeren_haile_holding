@@ -212,14 +212,7 @@ export default function Home() {
             <p className="text-soft-gray mb-6 leading-relaxed">
               Our newsletter on permanent ownership, capital allocation, and building businesses that last.
             </p>
-            <a
-              href="https://broerenandco.substack.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary inline-block text-center"
-            >
-              Read the Newsletter
-            </a>
+            <p className="text-navy font-medium">Coming Soon</p>
           </div>
         </div>
       </section>
