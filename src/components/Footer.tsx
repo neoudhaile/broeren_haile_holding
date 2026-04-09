@@ -12,8 +12,7 @@ export default function Footer() {
               className="h-16 mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 text-sm leading-relaxed">
-              A long-term holding company based in Los Angeles,
-              dedicated to acquiring and operating established small businesses.
+              A long-term holding company based in Los Angeles, dedicated to acquiring and permanently owning established businesses in the Lower Middle Market.
             </p>
           </div>
 
@@ -64,6 +63,21 @@ export default function Footer() {
               <li>
                 <a href="tel:+12132615670" className="hover:text-white transition-colors">
                   (213) 261-5670
+                </a>
+              </li>
+            </ul>
+            <h4 className="text-sm font-semibold uppercase tracking-wider mt-6 mb-4 text-gold-muted">
+              Follow Us
+            </h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="https://broerenandco.substack.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  The Long Game Newsletter
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/broerenandco" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+                  X (Twitter)
                 </a>
               </li>
             </ul>

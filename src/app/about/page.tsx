@@ -67,24 +67,16 @@ export default function AboutPage() {
                 <h2 className="text-3xl text-navy mb-6">About Rigel Broeren</h2>
                 <div className="prose prose-lg text-soft-gray">
                   <p className="leading-relaxed mb-4">
-                    I&apos;m a Los Angeles native with deep roots in Southern California. After graduating from
-                    the <span className="text-navy font-medium">USC Marshall School of Business</span>, I spent
-                    years in real estate, learning how to evaluate assets, structure deals, and manage
-                    long-term investments.
+                    After graduating from the <span className="text-navy font-medium">USC Marshall School of Business</span>, I founded
+                    Broeren & Co. Holdings with a simple conviction: the best businesses are the ones worth holding forever.
                   </p>
                   <p className="leading-relaxed mb-4">
-                    That experience taught me a fundamental truth: the best investments are the ones you
-                    hold onto. I founded Broeren & Co. Holdings to apply that same patient, long-term
-                    approach to small business ownership.
-                  </p>
-                  <p className="leading-relaxed mb-4">
-                    I focus exclusively on <span className="text-navy font-medium">Southern California businesses</span> because
-                    I believe in being close to the companies I own. I want to know the employees, understand
-                    the customers, and be available when I&apos;m needed.
+                    Broeren & Co. acquires businesses nationwide, with a focus on durable cash flows, management depth,
+                    and competitive positions that compound over time.
                   </p>
                   <p className="leading-relaxed">
-                    My goal is simple: to build a portfolio of great businesses that I&apos;ll own and
-                    operate for decades&mdash;not flip in a few years for a quick profit.
+                    My goal is simple: to build a permanent portfolio of exceptional businesses&mdash;not flip
+                    them in a few years for a quick profit.
                   </p>
                 </div>
               </div>
@@ -100,11 +92,10 @@ export default function AboutPage() {
             <h2 className="text-3xl text-navy mb-8">Our Philosophy</h2>
             <div className="prose prose-lg text-soft-gray">
               <p className="leading-relaxed mb-6">
-                At Broeren & Co. Holdings, we take a fundamentally different approach to business ownership.
-                We are not looking to grow quickly, flip companies, or extract maximum value in the short term.
+                At Broeren & Co. Holdings, we are building a permanent portfolio of exceptional businesses, not
+                a fund with an exit date or a PE firm on a 5-year clock.
               </p>
               <p className="leading-relaxed mb-6">
-                Instead, we seek to build a family of businesses that we will own and operate for decades.
                 We measure success not in quarterly returns, but in the long-term health of our businesses,
                 the satisfaction of their customers, and the well-being of their employees.
               </p>
@@ -124,41 +115,88 @@ export default function AboutPage() {
             <h2 className="text-3xl text-navy mb-8">Why We Buy Businesses</h2>
             <div className="prose prose-lg text-soft-gray">
               <p className="leading-relaxed mb-6">
-                We acquire businesses because we love the work of running them. There is something deeply
-                satisfying about helping a good business become even better, about serving customers well,
-                and about creating a stable environment for employees to thrive.
+                We acquire businesses because we believe the best returns come from patient capital allocation
+                and management stewardship. When you pair durable cash flows with competent operators and a
+                permanent time horizon, the results compound in ways that short-term ownership never achieves.
               </p>
               <p className="leading-relaxed mb-6">
                 We look for businesses that have stood the test of time&mdash;companies with loyal customers,
                 skilled employees, and solid reputations. These are the businesses that make up the backbone
-                of local economies.
+                of their industries.
               </p>
               <p className="leading-relaxed">
-                When we find such a business, we want to preserve what makes it special while providing the
-                resources and support to help it continue to succeed.
+                When we find such a business, we preserve what makes it special&mdash;the people, the name,
+                the reputation&mdash;while providing the capital and strategic support to help it continue
+                compounding for decades.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How We Transition Ownership */}
+      {/* Investment Types */}
       <section className="py-20 bg-warm-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl text-navy mb-8">How We Transition Ownership</h2>
+            <h2 className="text-3xl text-navy mb-4">Investment Types</h2>
+            <p className="text-soft-gray leading-relaxed mb-10">
+              We structure every acquisition around the seller&apos;s situation. There is no single deal
+              type — we adapt to what works for you.
+            </p>
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-lg border border-gray-200">
+                <h3 className="text-xl text-navy mb-3 font-medium">Legacy Buyout</h3>
+                <p className="text-soft-gray leading-relaxed">
+                  The owner is ready for a clean exit. A capable management team already runs the business.
+                  Transition period of 90 days to one year. This is our most common structure.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg border border-gray-200">
+                <h3 className="text-xl text-navy mb-3 font-medium">Managed Transition</h3>
+                <p className="text-soft-gray leading-relaxed">
+                  The owner is operationally involved but a capable second-in-command exists or can be developed.
+                  Owner reduces involvement gradually over one to three years while we build the management
+                  layer beneath them.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-lg border border-gray-200">
+                <h3 className="text-xl text-navy mb-3 font-medium">Partnership Buyout</h3>
+                <p className="text-soft-gray leading-relaxed">
+                  The owner wants to retain meaningful equity and remain operationally active for two to five years.
+                  We acquire a majority position, the owner continues as operator, and we provide capital, strategic
+                  support, and long-term permanence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What a Great Business Looks Like */}
+      <section className="py-20 bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl text-navy mb-8">What a Great Business Looks Like to Us</h2>
             <div className="prose prose-lg text-soft-gray">
               <p className="leading-relaxed mb-6">
-                We understand that selling a business you&apos;ve built is a significant decision. That&apos;s why
-                we approach every transition with care, flexibility, and respect for the seller&apos;s wishes.
+                Exceptional businesses share three traits: a management team that runs the operation without
+                the owner, consistent and durable cash flow, and a competitive position that compounds over time.
               </p>
               <p className="leading-relaxed mb-6">
-                We work at your pace. Some owners want a quick transition; others prefer to stay involved
-                for months or even years. We accommodate both approaches and everything in between.
+                Whether owners are selling for retirement, estate planning, or a new chapter entirely, they
+                share one thing: the desire to see their business continue as it always has — same name,
+                same people, same reputation.
+              </p>
+              <p className="leading-relaxed mb-6">
+                That is precisely what we offer. We do not take over management. We do not merge, rebrand,
+                or restructure. We rely on the people already inside the business to keep doing what made
+                it worth acquiring in the first place.
               </p>
               <p className="leading-relaxed">
-                Throughout the process, we prioritize open communication, confidentiality, and a genuine
-                effort to understand what matters most to you about your business&apos;s future.
+                Good businesses — ones still building toward exceptional — are more common and equally welcome.
+                When we acquire a good business, we work alongside its team to strengthen what&apos;s already
+                working: capital allocation, operational systems, and the management depth that creates
+                long-term durability.
               </p>
             </div>
           </div>

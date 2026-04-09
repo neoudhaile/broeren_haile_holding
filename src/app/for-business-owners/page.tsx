@@ -34,6 +34,10 @@ export default function ForBusinessOwnersPage() {
                   worth protecting.
                 </p>
                 <p className="leading-relaxed mb-6">
+                  Whether you&apos;re thinking about retirement, estate planning, or simply ready to pursue
+                  a new chapter — I understand that selling a business you&apos;ve built is a significant decision.
+                </p>
+                <p className="leading-relaxed mb-6">
                   I started Broeren & Co. Holdings because I saw too many business owners facing a difficult
                   choice: sell to a buyer who will change everything, or work until you simply can&apos;t anymore.
                 </p>
@@ -97,7 +101,9 @@ export default function ForBusinessOwnersPage() {
                   <h3 className="text-xl text-navy mb-2">Learn About Your Goals</h3>
                   <p className="text-soft-gray leading-relaxed">
                     Everyone&apos;s situation is different. We take time to understand what matters most
-                    to you, whether it&apos;s valuation, timing, employee retention, or staying involved.
+                    to you — whether it&apos;s valuation, timing, employee retention, staying involved,
+                    or creative structures like seller financing. We&apos;re open to structuring deals
+                    that work for both sides.
                   </p>
                 </div>
               </div>

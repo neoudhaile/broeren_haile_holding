@@ -48,10 +48,10 @@ export default function Home() {
             />
             <div className="w-16 h-px bg-gold mx-auto mb-8"></div>
             <p className="text-xl md:text-2xl text-charcoal mb-4 leading-relaxed font-light">
-              A holding company based in Los Angeles that acquires and operates established businesses long-term.
+              A permanent holding company acquiring established, cash-flowing businesses in the lower middle market. We buy great businesses and hold them forever.
             </p>
             <p className="text-lg text-soft-gray mb-12 max-w-2xl mx-auto">
-              We partner with owners seeking succession or looking to grow their business while maintaining continuity for their employees and customers.
+              Backed by committed equity from experienced operators and investors.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/for-business-owners" className="btn-primary inline-block text-center">
@@ -91,9 +91,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl text-navy mb-3 font-medium">Operator-Led</h3>
+              <h3 className="text-xl text-navy mb-3 font-medium">Management-First</h3>
               <p className="text-soft-gray leading-relaxed">
-                We personally manage and support our businesses. We are hands-on owners, not distant investors.
+                We invest in businesses with strong management teams already in place. Our role is capital, oversight, and long-term strategic support — not day-to-day operations.
               </p>
             </div>
 
@@ -118,52 +118,52 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl text-navy mb-4">Industries We Focus On</h2>
-              <p className="text-soft-gray">Repair & Maintenance Businesses</p>
+              <p className="text-soft-gray">Lower Middle Market Businesses Nationwide</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="group">
                 <div className="aspect-[4/3] bg-gray-100 rounded-xl overflow-hidden mb-3 shadow-sm">
                   <ImageWithFallback
-                    src="/images/auto-repair.jpg"
-                    alt="Automotive Repair"
+                    src="/images/image.png"
+                    alt="Industrial Services"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    fallbackText="Auto"
+                    fallbackText="Industrial"
                   />
                 </div>
-                <p className="text-charcoal text-center text-sm font-medium">Automotive Repair</p>
+                <p className="text-charcoal text-center text-sm font-medium">Industrial Services</p>
               </div>
               <div className="group">
                 <div className="aspect-[4/3] bg-gray-100 rounded-xl overflow-hidden mb-3 shadow-sm">
                   <ImageWithFallback
-                    src="/images/equipment-repair.jpg"
-                    alt="Equipment Repair"
+                    src="/images/image2.png"
+                    alt="Infrastructure & Environmental"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    fallbackText="Equipment"
+                    fallbackText="Infrastructure"
                   />
                 </div>
-                <p className="text-charcoal text-center text-sm font-medium">Equipment Repair</p>
+                <p className="text-charcoal text-center text-sm font-medium">Specialty Contracting</p>
               </div>
               <div className="group">
                 <div className="aspect-[4/3] bg-gray-100 rounded-xl overflow-hidden mb-3 shadow-sm">
                   <ImageWithFallback
-                    src="/images/technical-services.jpg"
-                    alt="Specialized Technical Services"
+                    src="/images/image3.png"
+                    alt="Commercial Services"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    fallbackText="Technical"
+                    fallbackText="Services"
                   />
                 </div>
-                <p className="text-charcoal text-center text-sm font-medium">Technical Services</p>
+                <p className="text-charcoal text-center text-sm font-medium">Commercial Services</p>
               </div>
               <div className="group">
                 <div className="aspect-[4/3] bg-gray-100 rounded-xl overflow-hidden mb-3 shadow-sm">
                   <ImageWithFallback
-                    src="/images/local-service.jpg"
-                    alt="Local Service Companies"
+                    src="/images/image4.png"
+                    alt="Manufacturing & Fabrication"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    fallbackText="Service"
+                    fallbackText="Manufacturing"
                   />
                 </div>
-                <p className="text-charcoal text-center text-sm font-medium">Local Services</p>
+                <p className="text-charcoal text-center text-sm font-medium">Manufacturing</p>
               </div>
             </div>
           </div>
@@ -200,6 +200,26 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="py-16 bg-warm-white">
+        <div className="container-custom">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl text-navy mb-4">The Long Game</h2>
+            <p className="text-soft-gray mb-6 leading-relaxed">
+              Our newsletter on permanent ownership, capital allocation, and building businesses that last.
+            </p>
+            <a
+              href="https://broerenandco.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block text-center"
+            >
+              Read the Newsletter
+            </a>
           </div>
         </div>
       </section>
