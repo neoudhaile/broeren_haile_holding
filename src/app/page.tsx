@@ -91,9 +91,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl text-navy mb-3 font-medium">Management-First</h3>
+              <h3 className="text-xl text-navy mb-3 font-medium">Management Continuity</h3>
               <p className="text-soft-gray leading-relaxed">
-                We invest in businesses with strong management teams already in place. Our role is capital, oversight, and long-term strategic support — not day-to-day operations.
+                We prefer businesses that already run without their owner. Where that is not yet true, we work with you to build the transition into new management. Our role is capital, oversight, and long-term strategic support — not day-to-day operations.
               </p>
             </div>
 

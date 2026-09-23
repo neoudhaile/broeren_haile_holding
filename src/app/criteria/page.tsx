@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Acquisition Criteria | Broeren & Co. Holdings",
-  description: "We acquire established, cash-flowing businesses with durable competitive positions and management teams already in place.",
+  description: "We acquire established, cash-flowing businesses. We prefer ones that run without their owner, and build the transition into new management where they don’t.",
 };
 
 export default function CriteriaPage() {
@@ -15,8 +15,9 @@ export default function CriteriaPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl text-navy mb-6">Acquisition Criteria</h1>
             <p className="text-xl text-soft-gray leading-relaxed">
-              We acquire established, cash-flowing businesses with durable competitive positions
-              and management teams already in place.
+              We acquire established, cash-flowing businesses with durable competitive positions.
+              We prefer businesses that run without their owner — and where they do not yet,
+              we work with you to build the path into new management.
             </p>
           </div>
         </div>
@@ -79,10 +80,10 @@ export default function CriteriaPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl text-navy mb-2">Management in Place</h3>
+                  <h3 className="text-xl text-navy mb-2">Management Depth</h3>
                   <p className="text-soft-gray leading-relaxed">
-                    A team capable of running day-to-day operations without owner involvement — or a clear
-                    path to building one during transition.
+                    Ideally a team already capable of running day-to-day operations without the owner. Where that
+                    team does not exist yet, we work with you to build one through the transition.
                   </p>
                 </div>
               </div>

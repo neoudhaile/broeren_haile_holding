@@ -64,7 +64,10 @@ export default function AboutPage() {
                 />
               </div>
               <div>
-                <h2 className="text-3xl text-navy mb-6">About Rigel Broeren</h2>
+                <h2 className="text-3xl text-navy mb-6">
+                  About Rigel Broeren{" "}
+                  <span className="text-lg text-soft-gray font-normal whitespace-nowrap">(Rigel: RYE-jel)</span>
+                </h2>
                 <div className="prose prose-lg text-soft-gray">
                   <p className="leading-relaxed mb-4">
                     After graduating from the <span className="text-navy font-medium">USC Marshall School of Business</span>, I founded
@@ -147,7 +150,7 @@ export default function AboutPage() {
               <div className="bg-white p-8 rounded-lg border border-gray-200">
                 <h3 className="text-xl text-navy mb-3 font-medium">Legacy Buyout</h3>
                 <p className="text-soft-gray leading-relaxed">
-                  The owner is ready for a clean exit. A capable management team already runs the business.
+                  The owner is ready for a clean exit and the business already runs without them.
                   Transition period of 90 days to one year. This is our most common structure.
                 </p>
               </div>
@@ -179,8 +182,9 @@ export default function AboutPage() {
             <h2 className="text-3xl text-navy mb-8">What a Great Business Looks Like to Us</h2>
             <div className="prose prose-lg text-soft-gray">
               <p className="leading-relaxed mb-6">
-                Exceptional businesses share three traits: a management team that runs the operation without
-                the owner, consistent and durable cash flow, and a competitive position that compounds over time.
+                We look for three traits: an operation that does not depend on any one person, consistent and
+                durable cash flow, and a competitive position that compounds over time. Where a business still
+                leans on its owner, we work with you to build the management layer that takes their place.
               </p>
               <p className="leading-relaxed mb-6">
                 Whether owners are selling for retirement, estate planning, or a new chapter entirely, they
