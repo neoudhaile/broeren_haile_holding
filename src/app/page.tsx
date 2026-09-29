@@ -72,7 +72,7 @@ export default function Home() {
             <h2 className="text-3xl text-navy mb-4">What Makes Us Different</h2>
             <div className="w-12 h-px bg-gold mx-auto"></div>
           </div>
-          <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
             <div className="text-center">
               <div className="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,18 +82,6 @@ export default function Home() {
               <h3 className="text-xl text-navy mb-3 font-medium">Permanent Ownership</h3>
               <p className="text-soft-gray leading-relaxed">
                 We do not flip or resell companies. When we acquire a business, we intend to own and operate it indefinitely.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/5 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl text-navy mb-3 font-medium">Management Continuity</h3>
-              <p className="text-soft-gray leading-relaxed">
-                We prefer businesses that already run without their owner. Where that is not yet true, we work with you to build the transition into new management. Our role is capital, oversight, and long-term strategic support — not day-to-day operations.
               </p>
             </div>
 

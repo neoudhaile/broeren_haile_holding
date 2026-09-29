@@ -192,9 +192,9 @@ export default function AboutPage() {
                 same people, same reputation.
               </p>
               <p className="leading-relaxed mb-6">
-                That is precisely what we offer. We do not take over management. We do not merge, rebrand,
-                or restructure. We rely on the people already inside the business to keep doing what made
-                it worth acquiring in the first place.
+                That is precisely what we offer. We do not merge, rebrand, or restructure. Where strong
+                leadership is already in place, we back it; where it is not, we work with you to put the
+                right management in place — and we keep the people who made the business worth acquiring.
               </p>
               <p className="leading-relaxed">
                 Good businesses — ones still building toward exceptional — are more common and equally welcome.
